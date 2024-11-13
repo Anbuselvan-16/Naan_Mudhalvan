@@ -4,7 +4,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 
 
 # Load dataset
-df = pd.read_csv('IMDB Dataset.csv')
+df = pd.read_csv('HOTEL Dataset.csv')
 # Data cleaning and preprocessing
 df['review'] = df['review'].str.replace('<br />', ' ').str.replace('[^a-zA-Z ]', '').str.lower()
 print(df)
